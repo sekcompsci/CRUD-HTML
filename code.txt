@@ -1,6 +1,18 @@
-<div class="html-panel-body" ng-bind-html="ctrl.content" ng-show="ctrl.content">
-    <div class="add-panel__searchbar"><label class="gf-form gf-form--grow gf-form--has-input-icon"><input type="text" class="gf-form-input gf-form--grow" placeholder="Panel Search Filter" value=""><i class="gf-form-input-icon fa fa-search"></i></label>
-    </div>
+<div class="add-panel__searchbar" style="
+">
+    <label class="gf-form gf-form--grow gf-form--has-input-icon" style="
+    width: 80%;
+    display: inline-flex;
+"><input type="text" class="gf-form-input gf-form--grow" placeholder="Panel Search Filter" value=""><i class="gf-form-input-icon fa fa-search"></i>
+    </label>
+    <button class="btn navbar-button navbar-button--star" ng-show="::ctrl.dashboard.meta.canStar" ng-click="ctrl.starDashboard()" bs-tooltip="'Mark as favorite'" data-placement="bottom" data-original-title="" title="" style="
+    margin-bottom: 3px;
+    height: 34px;
+    width: 15%;
+">
+			Add
+		</button>
+</div>
     <div class="table-panel-container">
 	<div class="table-panel-header-bg" ng-show="ctrl.table.rows.length"></div>
 	<div class="table-panel-scroll" ng-show="ctrl.table.rows.length" style="max-height: 280px;">
@@ -30,4 +42,3 @@
     <div class="table-panel-footer" style="
     margin-top: 8px;
 "><ul><li><a class="table-panel-page-link pointer active">1</a></li><li><a class="table-panel-page-link pointer ">2</a></li><li><a class="table-panel-page-link pointer ">3</a></li><li><a class="table-panel-page-link pointer ">4</a></li></ul></div>
-</div>

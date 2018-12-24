@@ -1,0 +1,1 @@
+<div class="add-panel__searchbar"><label class="gf-form gf-form--grow gf-form--has-input-icon"><input type="text" class="gf-form-input gf-form--grow" placeholder="Panel Search Filter" value=""><i class="gf-form-input-icon fa fa-search"></i></label></div>
